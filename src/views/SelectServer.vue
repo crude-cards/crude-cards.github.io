@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div id="intro">
-      <h1>Not ready yet srryyyy.</h1>
+      <h1>Select Server</h1>
     </div>
   </div>
 </template>

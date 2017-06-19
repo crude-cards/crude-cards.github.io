@@ -5,7 +5,7 @@
       <h1>An online, open-source version of Cards Against Humanity.</h1>
     </div>
     <div id="link-cards">
-      <div class="wrapper"><router-link to="select-server"><div class="card">Play.</div></router-link></div>
+      <div class="wrapper"><router-link to="select-server"><div class="black card">Play now.</div></router-link></div>
       <div class="wrapper"><a href="https://discord.gg/ZpXwXKJ"><div class="card">Join our Discord Server.</div></a></div>
       <div class="wrapper"><a href="https://twitter.com/crude_cards"><div class="card">Follow us on Twitter.</div></a></div>
       <div class="wrapper"><a href="https://github.com/crude-cards/"><div class="card">View the source code on GitHub.</div></a></div>
@@ -55,7 +55,7 @@ img#logo {
   margin: 6rem 0;
   max-width: 1200px;
   overflow-x: auto;
-  padding: 16px 0;
+  padding: 32px 0;
 
   a {
 	  text-decoration: none;

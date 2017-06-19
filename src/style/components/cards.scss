@@ -1,5 +1,4 @@
 .card {
-	background: white;
 	max-width: 192px;
 	min-height: 288px;
 	width: 100%;
@@ -14,6 +13,17 @@
 	line-height: 24px;
 	transition: box-shadow 100ms;
 	cursor: pointer;
+}
+
+.card.black {
+	background: linear-gradient(#111, #222);
+	color: white;
+	border: 1px solid #444;
+}
+
+.card.black:hover {
+	background: #111;
+	box-shadow: 0 0 32px #222;
 }
 
 .card:hover {
