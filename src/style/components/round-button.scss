@@ -1,0 +1,36 @@
+@import '../mixins/no-highlight';
+
+.round-button {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 32px;
+	padding: 14px;
+	font-size: 20px;
+	background: darken($primary-color, 10%);
+	color: $primary-text-color;
+	cursor: pointer;
+	transition: 50ms transform, 50ms background;
+	@include no-highlight();
+}
+
+.round-button:hover {
+	background: $primary-color;
+	transform: scale(1.1);
+}
+
+.round-button:active {
+	transform: scale(0.9);
+	background: darken($primary-color, 10%);
+}
+
+@media screen and (max-width: $mobile) {
+	.round-button {
+		padding: 18px;
+		font-size: 24px;
+	}
+	.round-button:hover { 
+		transform: scale(1);
+	}
+	.round-button:active { transform: scale(0.9); }
+}

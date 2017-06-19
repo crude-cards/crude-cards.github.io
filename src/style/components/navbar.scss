@@ -1,0 +1,38 @@
+#navbar {
+	list-style: none;
+	padding: 0;
+	padding-top: 1rem;
+	text-align: left;
+	position: sticky;
+	top: 0;
+	background: $page-color;
+	ul {
+		float: right;
+
+		li {
+			margin-left: 1rem;
+		}
+	}
+
+	li {
+		display: inline-block;
+		padding: 1rem;
+		font-weight: bold;
+		color: #333;
+		border-bottom: 2px solid darken($primary-text-color, 10%);
+		cursor: pointer;
+		transition: 100ms border, 100ms color;
+	}
+
+	li:hover {
+		border-bottom: 2px solid darken($primary-color, 10%);
+		color: black;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	#navbar {
+		padding-top: 0;
+		border-bottom: 2px solid darken($primary-text-color, 30%);
+	}
+}

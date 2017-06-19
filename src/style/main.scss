@@ -1,0 +1,20 @@
+/* Import theme */
+@import 'theme';
+
+/* Import components */
+@import 'components/round-button';
+@import 'components/navbar';
+@import 'components/cards';
+
+body {
+	background: $page-color;
+  font-family: 'Arimo', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
