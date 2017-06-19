@@ -1,3 +1,4 @@
 import Index from './Index.vue';
+import SelectServer from './SelectServer';
 
-export default { Index };
+export default { Index, SelectServer };

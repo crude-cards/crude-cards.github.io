@@ -1,20 +1,13 @@
 <template>
   <div class="container">
     <div id="intro">
-      <p><img src="/static/assets/logo.svg" id="logo"/></p>
-      <h1>An online, open-source version of Cards Against Humanity.</h1>
-    </div>
-    <div id="link-cards">
-      <div class="wrapper"><router-link to="select-server"><div class="card">Play.</div></router-link></div>
-      <div class="wrapper"><a href="https://discord.gg/ZpXwXKJ"><div class="card">Join our Discord Server.</div></a></div>
-      <div class="wrapper"><a href="https://twitter.com/crude_cards"><div class="card">Follow us on Twitter.</div></a></div>
-      <div class="wrapper"><a href="https://github.com/crude-cards/"><div class="card">View the source code on GitHub.</div></a></div>
+      <h1>Not ready yet srryyyy.</h1>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'index-view',
+  name: 'select-server-view',
   data() {
     return {
       msg: 'Welcome to Your Vue.js App',

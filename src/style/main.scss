@@ -18,3 +18,15 @@ body {
 	width: 100%;
 	margin: 0 auto;
 }
+
+.fade-resize-enter-active, .fade-resize-leave-active {
+	opacity: 0;
+  transition: opacity 200ms, transform 200ms;
+  transform-origin: top;
+	z-index:1;
+}
+.fade-resize-enter, .fade-resize-leave-to {
+  opacity: 0;
+  transform: scale(0.95);
+	z-index:1;
+}

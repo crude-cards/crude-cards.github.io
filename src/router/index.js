@@ -11,5 +11,10 @@ export default new Router({
       name: 'Index',
       component: Views.Index,
     },
+    {
+      path: '/select-server',
+      name: 'SelectServer',
+      component: Views.SelectServer,
+    },
   ],
 });

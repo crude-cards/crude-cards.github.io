@@ -1,8 +1,8 @@
 <template>
 	<ul id="navbar" class="container">
-		<li>Crude Cards</li>
+		<router-link tag="li" to="/">Crude Cards</router-link>
     <ul id="navbar-other">
-      <li>Play</li>
+		  <router-link tag="li" to="select-server">Play</router-link>
     </ul>
 	</ul>
 </template>
