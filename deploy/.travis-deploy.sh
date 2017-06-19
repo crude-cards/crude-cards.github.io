@@ -14,7 +14,7 @@ echo -e "Building for a stable branch push - building and deploying."
 REPO=`git config remote.origin.url`
 SHA=`git rev-parse --verify HEAD`
 
-TARGET_BRANCH="build"
+TARGET_BRANCH="master"
 git clone $REPO dist -b $TARGET_BRANCH
 
 npm run build
