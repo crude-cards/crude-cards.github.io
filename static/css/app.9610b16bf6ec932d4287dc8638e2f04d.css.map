@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/App.vue"],"names":[],"mappings":"AACA,KACE,6BACA,iBAAmB","file":"static/css/app.9610b16bf6ec932d4287dc8638e2f04d.css","sourcesContent":["\n#app {\n  font-family: 'Arimo', sans-serif;\n  text-align: center;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/App.vue"],"sourceRoot":""}
