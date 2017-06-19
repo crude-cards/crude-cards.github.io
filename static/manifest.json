@@ -1,0 +1,45 @@
+{
+  "short_name": "Crude Cards",
+  "name": "Crude Cards",
+	"background_color": "#BF360C",
+	"theme_color": "#BF360C",
+	"display": "standalone",
+  "icons": [
+    {
+      "src": "assets/logo48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/logo96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/logo384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "assets/logo678.png",
+      "type": "image/png",
+      "sizes": "678x678"
+    },
+    {
+      "src": "assets/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "assets/logo1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    }
+  ],
+  "start_url": "index.html?launcher=true"
+}
