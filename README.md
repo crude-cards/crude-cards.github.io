@@ -1,6 +1,6 @@
 # crude-cards.github.io
 
-> Crude Cards website
+> The [Crude Cards](https://crudecards.xyz) website.
 
 ## Build Setup
 
