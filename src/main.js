@@ -3,6 +3,7 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import store from './store/store';
 
 require('@/style/main.scss');
 
@@ -12,6 +13,9 @@ Vue.config.productionTip = false;
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App },
 });
+
+Vue.filter('truncate', (string, limit) => string.length > limit ? `${string.substring(0, limit)}...` : string);

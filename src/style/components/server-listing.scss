@@ -1,0 +1,57 @@
+.server-listing {
+	flex: 1;
+	display: flex;
+	background: lighten($page-color, 1%);
+	padding: 16px;
+	border: 1px solid darken($page-color, 20%);
+	transition: 200ms filter, 200ms background, 100ms box-shadow;
+  align-items: center;
+	margin-bottom: 16px;
+
+	.part {
+		flex: 1;
+    align-items: center;
+	}
+
+	p {
+		margin: 0;
+		padding: 4px;
+	}
+
+	em {
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	.title {
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	.description {
+		margin: 0;
+	}
+}
+
+.server-listing:not(.loading):hover {
+	box-shadow: 0 0 32px darken($page-color, 20%);
+	cursor: pointer;
+}
+
+.server-listing.loading {
+	filter: blur(2px);
+	background: darken($page-color, 20%);
+}
+
+.server-listing.error {
+	background: darken($primary-color, 10%);
+}
+
+@media screen and (max-width: $mobile) {
+	.server-listing {
+		flex-direction: column;
+		border-left: 0;
+		border-right: 0;
+		align-items: left;
+	}
+}

@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <navbar></navbar>
-  <transition name="fade-resize">
-    <router-view></router-view>
-  </transition>
+    <transition name="fade-resize">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
