@@ -1,5 +1,5 @@
 <template>
-  <div v-bind:class="['server-listing', { loading: !Boolean(data), error }]">
+  <div v-bind:class="['server-listing', { loading: !Boolean(data), error }]" @click="select()">
     <div class="part">
       <div class="title">{{ name | truncate(60) }}</div>
       <div class="data" v-if="data">
@@ -32,6 +32,14 @@ export default {
     this.$store.dispatch('serverListings/cache', this.host).catch(() => {
       this.error = true;
     });
+  },
+  methods: {
+    select() {
+      this.$router.push({
+        name: 'login',
+        query: { server: this.host },
+      });
+    },
   },
 };
 </script>
