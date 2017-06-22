@@ -91,6 +91,7 @@ export default {
   
   #discord-login {
     background-image: url(/static/assets/discord.svg);
+    background-size: auto 128px;
   }
 
   .card {
