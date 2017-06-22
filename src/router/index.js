@@ -37,6 +37,15 @@ const router = new Router({
         else next();
       },
     },
+    {
+      path: '/game',
+      name: 'game',
+      component: Views.Game,
+      async beforeEnter(to, from, next) {
+        if (!store.state.server.auth) next({ name: 'select-server' });
+        else next();
+      },
+    },
   ],
 });
 

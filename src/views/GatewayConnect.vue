@@ -7,16 +7,31 @@
   </div>
 </template>
 <script>
+const statuses = {
+  0: 'Connecting to server...',
+  1: 'Authenticating on server...',
+  2: 'Ready!',
+};
+
 export default {
   name: 'gateway-connect',
-  data() {
-    return {
-      status: 'Connecting to gateway...',
-    };
-  },
   computed: {
     server() {
       return this.$store.state.server;
+    },
+    connectionState() {
+      return (this.$store.state.server.connection || {}).state || 0;
+    },
+    status() {
+      const state = this.connectionState;
+      return statuses[state || 0];
+    },
+  },
+  watch: {
+    connectionState(n) {
+      if (n === 2) {
+        this.$router.push({ name: 'game' });
+      }
     },
   },
   created() {

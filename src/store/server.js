@@ -7,6 +7,7 @@ export default {
     host: null,
     auth: null,
     connection: null,
+    connectionState: 0,
   },
   mutations: {
     setAuth(state, { data }) {
@@ -15,7 +16,7 @@ export default {
     setHost(state, { host }) {
       state.host = host;
     },
-    setConnection(state, { connection }) {
+    setConnection(state, connection) {
       state.connection = connection;
     },
   },
