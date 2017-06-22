@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Verify your Login</title>
+	</head>
+	<body>
+		<script>
+			window.opener.postMessage(location.href.split('?code=')[1], location.origin);
+		</script>
+	</body>
+</html>
