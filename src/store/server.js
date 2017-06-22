@@ -1,13 +1,22 @@
 import request from 'superagent';
+import GatewayConnection from './connection';
 
 export default {
   namespaced: true,
   state: {
-    token: null,
+    host: null,
+    auth: null,
+    connection: null,
   },
   mutations: {
     setAuth(state, { data }) {
       state.auth = data;
+    },
+    setHost(state, { host }) {
+      state.host = host;
+    },
+    setConnection(state, { connection }) {
+      state.connection = connection;
     },
   },
   actions: {
@@ -16,6 +25,7 @@ export default {
         .post(`https://${host}/api/authenticate/discord`)
         .send({ code })
       ).body;
+      context.commit('setHost', { host });
       context.commit('setAuth', { data });
       return data;
     },
@@ -24,8 +34,13 @@ export default {
         .post(`https://${host}/api/authenticate/google`)
         .send({ code })
       ).body;
+      context.commit('setHost', { host });
       context.commit('setAuth', { data });
       return data;
+    },
+    connect(context) {
+      const connection = new GatewayConnection(context);
+      context.commit('setConnection', connection);
     },
   },
 };

@@ -94,15 +94,26 @@ export default {
     background-size: auto 128px;
   }
 
+  #discord-login:hover {
+    background-size: auto 140px;
+  }
+
   .card {
     background-repeat: no-repeat;
     background-size: 128px;
     background-position: center;
     background-color: #fefefe;
+    transition: 100ms background-size;
+    transition-timing: ease-out;
   }
 
   .card:hover {
     background-color: white;
+    background-size: 140px;
+  }
+
+  .card:active {
+    background-color: #efefef;
   }
 }
 

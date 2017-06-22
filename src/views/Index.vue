@@ -52,7 +52,7 @@ img#logo {
 #link-cards {
   display: flex;
   margin: 0 auto;
-  margin: 6rem 0;
+  margin: 2rem 0;
   max-width: 1200px;
   width: 100%;
   overflow-x: auto;

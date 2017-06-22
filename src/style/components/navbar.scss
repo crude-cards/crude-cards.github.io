@@ -31,6 +31,12 @@
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	#navbar {
+		padding-top: 0;
+	}
+}
+
 @media screen and (max-width: $mobile) {
 	#navbar {
 		padding-top: 0;
