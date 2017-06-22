@@ -54,6 +54,7 @@ img#logo {
   margin: 0 auto;
   margin: 6rem 0;
   max-width: 1200px;
+  width: 100%;
   overflow-x: auto;
   padding: 32px 0;
 

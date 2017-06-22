@@ -2,10 +2,12 @@
   <div class="container">
     <div id="intro">
       <h1>Login to {{ host }}</h1>
-      <p>
-        <button @click="google()">Google</button>
-        <button @click="discord()">Discord</button>
-      </p>
+    </div>
+    <div id="link-cards">
+      <div class="wrapper">
+        <div class="card" id="google-login" @click="google()">Login with Google.</div></div>
+      <div class="wrapper">
+        <div class="card" id="discord-login" @click="discord()">Login with Discord.</div></div>
     </div>
   </div>
 </template>
@@ -56,3 +58,63 @@ export default {
   },
 };
 </script>
+<style scoped lang="scss">
+@import '../style/theme';
+
+#link-cards {
+  display: inline-flex;
+  margin: 0 auto;
+  margin: 1rem 0;
+  overflow-x: auto;
+  padding: 32px 0;
+  flex-direction: row;
+
+  a {
+	  text-decoration: none;
+  }
+
+  .wrapper {
+    flex: 1;
+    min-width: 288px;
+    max-width: 288px;
+    .card {
+      margin: 0 auto;
+    }
+  }
+
+  .wrapper:nth-child(odd) .card { transform: rotate(-5deg); }
+  .wrapper:nth-child(even) .card { transform: rotate(5deg); }
+
+  #google-login {
+    background-image: url(/static/assets/google.svg);
+  }
+  
+  #discord-login {
+    background-image: url(/static/assets/discord.svg);
+  }
+
+  .card {
+    background-repeat: no-repeat;
+    background-size: 128px;
+    background-position: center;
+    background-color: #fefefe;
+  }
+
+  .card:hover {
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  #link-cards {
+    flex-direction: column;
+    padding: 0;
+    .card {
+      transform: none !important;
+    }
+    .wrapper {
+      margin-bottom: 24px;
+    }
+  }
+}
+</style>
